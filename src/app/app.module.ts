@@ -1,8 +1,10 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import {FormsModule} from '@angular/forms'
 
 import { AppComponent } from './app.component';
 import { ProductListComponent } from './Products/product-list.component';
+import { fromEventPattern } from 'rxjs';
 
 @NgModule({
   declarations: [
@@ -10,7 +12,8 @@ import { ProductListComponent } from './Products/product-list.component';
     ProductListComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule
   ],
   bootstrap: [AppComponent]
 })
